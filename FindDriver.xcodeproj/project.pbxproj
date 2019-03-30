@@ -56,15 +56,39 @@
 		2EDA7B57224FB24000794AE2 /* FindDriver */ = {
 			isa = PBXGroup;
 			children = (
+				2EDA7B6F224FB2B500794AE2 /* Controller */,
+				2EDA7B6E224FB2AE00794AE2 /* View */,
+				2EDA7B6D224FB29600794AE2 /* Model */,
 				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
-				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
-				2EDA7B5C224FB24000794AE2 /* Main.storyboard */,
 				2EDA7B62224FB24000794AE2 /* Assets.xcassets */,
 				2EDA7B64224FB24000794AE2 /* LaunchScreen.storyboard */,
 				2EDA7B67224FB24000794AE2 /* Info.plist */,
 				2EDA7B5F224FB24000794AE2 /* FindDriver.xcdatamodeld */,
 			);
 			path = FindDriver;
+			sourceTree = "<group>";
+		};
+		2EDA7B6D224FB29600794AE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EDA7B6E224FB2AE00794AE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EDA7B5C224FB24000794AE2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2EDA7B6F224FB2B500794AE2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
