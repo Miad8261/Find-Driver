@@ -13,6 +13,9 @@
 		2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5F224FB24000794AE2 /* FindDriver.xcdatamodeld */; };
 		2EDA7B63224FB24000794AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B62224FB24000794AE2 /* Assets.xcassets */; };
 		2EDA7B66224FB24000794AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B64224FB24000794AE2 /* LaunchScreen.storyboard */; };
+		2EE55E1122500301003FD9FB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1022500301003FD9FB /* MainTabBarController.swift */; };
+		2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1222500B47003FD9FB /* LoginViewController.swift */; };
+		2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2EDA7B62224FB24000794AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDA7B65224FB24000794AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDA7B67224FB24000794AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE55E1022500301003FD9FB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2EE55E1222500B47003FD9FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				2EDA7B5C224FB24000794AE2 /* Main.storyboard */,
+				2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */,
+				2EE55E1222500B47003FD9FB /* LoginViewController.swift */,
+				2EE55E1022500301003FD9FB /* MainTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 			files = (
 				2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */,
 				2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */,
+				2EE55E1122500301003FD9FB /* MainTabBarController.swift in Sources */,
+				2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */,
+				2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */,
 				2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
