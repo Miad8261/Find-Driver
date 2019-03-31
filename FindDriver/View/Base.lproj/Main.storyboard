@@ -83,6 +83,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Vehicle" id="Qs1-FK-959"/>
+                    <connections>
+                        <outlet property="loginAsDriverButton" destination="uxt-MI-XcA" id="p8V-sJ-8Uh"/>
+                        <outlet property="loginAsOwnerButton" destination="uxt-MI-XcA" id="wqa-QB-Pi4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2288A92EA0DBF576BEC273 /* Pods_FindDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B396178F4AC33741D734A /* Pods_FindDriver.framework */; };
+		2E12C90C22511F0D005FCC77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */; };
 		2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B58224FB24000794AE2 /* AppDelegate.swift */; };
 		2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5A224FB24000794AE2 /* ViewController.swift */; };
 		2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5C224FB24000794AE2 /* Main.storyboard */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EDA7B55224FB24000794AE2 /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDA7B58224FB24000794AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDA7B5A224FB24000794AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2EE55E1622503967003FD9FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
+		B48B396178F4AC33741D734A /* Pods_FindDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B975586099A5B95DECECD0EB /* Pods-FindDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.release.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.release.xcconfig"; sourceTree = "<group>"; };
+		C98F8F36603A02C16830B4E7 /* Pods-FindDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.debug.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2288A92EA0DBF576BEC273 /* Pods_FindDriver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E12C90D22511F52005FCC77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EDA7B67224FB24000794AE2 /* Info.plist */,
+				2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2EDA7B4C224FB24000794AE2 = {
 			isa = PBXGroup;
 			children = (
 				2EDA7B57224FB24000794AE2 /* FindDriver */,
 				2EDA7B56224FB24000794AE2 /* Products */,
+				4E5294D438873BCFBBC3532D /* Pods */,
+				84EA8CD4FC4459E8F5227790 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,10 +87,8 @@
 				2EDA7B6D224FB29600794AE2 /* Model */,
 				2EDA7B6E224FB2AE00794AE2 /* View */,
 				2EDA7B6F224FB2B500794AE2 /* Controller */,
-				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
 				2EDA7B62224FB24000794AE2 /* Assets.xcassets */,
-				2EDA7B64224FB24000794AE2 /* LaunchScreen.storyboard */,
-				2EDA7B67224FB24000794AE2 /* Info.plist */,
+				2E12C90D22511F52005FCC77 /* Supporting Files */,
 				2EDA7B5F224FB24000794AE2 /* FindDriver.xcdatamodeld */,
 			);
 			path = FindDriver;
@@ -89,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2EDA7B5C224FB24000794AE2 /* Main.storyboard */,
+				2EDA7B64224FB24000794AE2 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,8 +119,27 @@
 				2EE55E1222500B47003FD9FB /* LoginViewController.swift */,
 				2EE55E1022500301003FD9FB /* MainTabBarController.swift */,
 				2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */,
+				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E5294D438873BCFBBC3532D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C98F8F36603A02C16830B4E7 /* Pods-FindDriver.debug.xcconfig */,
+				B975586099A5B95DECECD0EB /* Pods-FindDriver.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84EA8CD4FC4459E8F5227790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B48B396178F4AC33741D734A /* Pods_FindDriver.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EDA7B6A224FB24000794AE2 /* Build configuration list for PBXNativeTarget "FindDriver" */;
 			buildPhases = (
+				D5617A65F1C7673DB340837A /* [CP] Check Pods Manifest.lock */,
 				2EDA7B51224FB24000794AE2 /* Sources */,
 				2EDA7B52224FB24000794AE2 /* Frameworks */,
 				2EDA7B53224FB24000794AE2 /* Resources */,
+				917DFC0EC231C0D786B15001 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,12 +203,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDA7B66224FB24000794AE2 /* LaunchScreen.storyboard in Resources */,
+				2E12C90C22511F0D005FCC77 /* GoogleService-Info.plist in Resources */,
 				2EDA7B63224FB24000794AE2 /* Assets.xcassets in Resources */,
 				2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		917DFC0EC231C0D786B15001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindDriver/Pods-FindDriver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5617A65F1C7673DB340837A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindDriver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2EDA7B51224FB24000794AE2 /* Sources */ = {
@@ -328,6 +424,7 @@
 		};
 		2EDA7B6B224FB24000794AE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C98F8F36603A02C16830B4E7 /* Pods-FindDriver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +443,7 @@
 		};
 		2EDA7B6C224FB24000794AE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B975586099A5B95DECECD0EB /* Pods-FindDriver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
