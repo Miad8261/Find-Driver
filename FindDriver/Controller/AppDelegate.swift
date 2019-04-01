@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Connect up our app and configure database
+        FirebaseApp.configure()
+        
+        //its a refrence to a brand new databas within in our Firebase database
+       // let ref = Database.database().reference()
+        
+        //myDatabase.setValue("We've got data!")
         return true
     }
 

@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		1B2288A92EA0DBF576BEC273 /* Pods_FindDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B396178F4AC33741D734A /* Pods_FindDriver.framework */; };
 		2E12C90C22511F0D005FCC77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */; };
+		2E12C90F22517251005FCC77 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C90E22517251005FCC77 /* RegistrationViewController.swift */; };
+		2E12C9112251E515005FCC77 /* DriverTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C9102251E515005FCC77 /* DriverTabBarController.swift */; };
+		2E12C91322528056005FCC77 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91222528056005FCC77 /* Owner.swift */; };
+		2E12C915225280F0005FCC77 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C914225280F0005FCC77 /* Driver.swift */; };
+		2E12C91722528248005FCC77 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91622528248005FCC77 /* Vehicle.swift */; };
+		2E12C919225282A3005FCC77 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C918225282A3005FCC77 /* Payment.swift */; };
 		2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B58224FB24000794AE2 /* AppDelegate.swift */; };
 		2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5A224FB24000794AE2 /* ViewController.swift */; };
 		2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5C224FB24000794AE2 /* Main.storyboard */; };
 		2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5F224FB24000794AE2 /* FindDriver.xcdatamodeld */; };
 		2EDA7B63224FB24000794AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B62224FB24000794AE2 /* Assets.xcassets */; };
 		2EDA7B66224FB24000794AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B64224FB24000794AE2 /* LaunchScreen.storyboard */; };
-		2EE55E1122500301003FD9FB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1022500301003FD9FB /* MainTabBarController.swift */; };
+		2EE55E1122500301003FD9FB /* OwnerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1022500301003FD9FB /* OwnerTabBarController.swift */; };
 		2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1222500B47003FD9FB /* LoginViewController.swift */; };
 		2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */; };
 		2EE55E1722503967003FD9FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1622503967003FD9FB /* TableViewCell.swift */; };
@@ -24,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E12C90E22517251005FCC77 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		2E12C9102251E515005FCC77 /* DriverTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTabBarController.swift; sourceTree = "<group>"; };
+		2E12C91222528056005FCC77 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		2E12C914225280F0005FCC77 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		2E12C91622528248005FCC77 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		2E12C918225282A3005FCC77 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		2EDA7B55224FB24000794AE2 /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDA7B58224FB24000794AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDA7B5A224FB24000794AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,7 +44,7 @@
 		2EDA7B62224FB24000794AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EDA7B65224FB24000794AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2EDA7B67224FB24000794AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2EE55E1022500301003FD9FB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2EE55E1022500301003FD9FB /* OwnerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerTabBarController.swift; sourceTree = "<group>"; };
 		2EE55E1222500B47003FD9FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2EE55E1622503967003FD9FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -97,6 +109,10 @@
 		2EDA7B6D224FB29600794AE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E12C91222528056005FCC77 /* Owner.swift */,
+				2E12C914225280F0005FCC77 /* Driver.swift */,
+				2E12C91622528248005FCC77 /* Vehicle.swift */,
+				2E12C918225282A3005FCC77 /* Payment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,13 +129,15 @@
 		2EDA7B6F224FB2B500794AE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
+				2E12C90E22517251005FCC77 /* RegistrationViewController.swift */,
 				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
 				2EE55E1622503967003FD9FB /* TableViewCell.swift */,
 				2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */,
+				2E12C9102251E515005FCC77 /* DriverTabBarController.swift */,
 				2EE55E1222500B47003FD9FB /* LoginViewController.swift */,
-				2EE55E1022500301003FD9FB /* MainTabBarController.swift */,
+				2EE55E1022500301003FD9FB /* OwnerTabBarController.swift */,
 				2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */,
-				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,7 +148,6 @@
 				C98F8F36603A02C16830B4E7 /* Pods-FindDriver.debug.xcconfig */,
 				B975586099A5B95DECECD0EB /* Pods-FindDriver.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -273,12 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E12C91722528248005FCC77 /* Vehicle.swift in Sources */,
 				2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */,
+				2E12C919225282A3005FCC77 /* Payment.swift in Sources */,
 				2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */,
 				2EE55E1922503B83003FD9FB /* AddEditTableViewController.swift in Sources */,
-				2EE55E1122500301003FD9FB /* MainTabBarController.swift in Sources */,
+				2E12C915225280F0005FCC77 /* Driver.swift in Sources */,
+				2E12C90F22517251005FCC77 /* RegistrationViewController.swift in Sources */,
+				2EE55E1122500301003FD9FB /* OwnerTabBarController.swift in Sources */,
+				2E12C9112251E515005FCC77 /* DriverTabBarController.swift in Sources */,
 				2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */,
 				2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */,
+				2E12C91322528056005FCC77 /* Owner.swift in Sources */,
 				2EE55E1722503967003FD9FB /* TableViewCell.swift in Sources */,
 				2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */,
 			);
