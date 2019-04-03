@@ -2,39 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>641315920897-14r5mktad61vojfab8i4gkohqlgpt31f.apps.googleusercontent.com</string>
+	<string>102379959048-anl16el7jkbdpnltuq4c1tughuuk7dop.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.641315920897-14r5mktad61vojfab8i4gkohqlgpt31f</string>
+	<string>com.googleusercontent.apps.102379959048-anl16el7jkbdpnltuq4c1tughuuk7dop</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBYH_s94Ut7hSYUepFhKwDaGob8YRCZQ5Y</string>
+	<string>AIzaSyAL5oJPlJ9o_xkdZ1C48rI7-ca67dnh6So</string>
 	<key>GCM_SENDER_ID</key>
-	<string>641315920897</string>
+	<string>102379959048</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>ca.miadapps.findDriver.FindDriver</string>
 	<key>PROJECT_ID</key>
-	<string>vehiclefinder-b79b6</string>
+	<string>finddriver-8d2d6</string>
 	<key>STORAGE_BUCKET</key>
-	<string>vehiclefinder-b79b6.appspot.com</string>
+	<string>finddriver-8d2d6.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:641315920897:ios:94720e220e87f8e0</string>
+	<string>1:102379959048:ios:94720e220e87f8e0</string>
 	<key>DATABASE_URL</key>
-	<string>https://vehiclefinder-b79b6.firebaseio.com</string>
+	<string>https://finddriver-8d2d6.firebaseio.com</string>
 </dict>
 </plist>

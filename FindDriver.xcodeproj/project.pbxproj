@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1B2288A92EA0DBF576BEC273 /* Pods_FindDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B48B396178F4AC33741D734A /* Pods_FindDriver.framework */; };
-		2E12C90C22511F0D005FCC77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */; };
 		2E12C90F22517251005FCC77 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C90E22517251005FCC77 /* RegistrationViewController.swift */; };
 		2E12C9112251E515005FCC77 /* DriverTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C9102251E515005FCC77 /* DriverTabBarController.swift */; };
 		2E12C91322528056005FCC77 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91222528056005FCC77 /* Owner.swift */; };
 		2E12C915225280F0005FCC77 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C914225280F0005FCC77 /* Driver.swift */; };
 		2E12C91722528248005FCC77 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91622528248005FCC77 /* Vehicle.swift */; };
 		2E12C919225282A3005FCC77 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C918225282A3005FCC77 /* Payment.swift */; };
+		2E12C91E2252B38E005FCC77 /* ShowAddVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91D2252B38E005FCC77 /* ShowAddVehicle.swift */; };
+		2E12C9202252B730005FCC77 /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12C91F2252B730005FCC77 /* AddEditTableViewController.swift */; };
 		2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B58224FB24000794AE2 /* AppDelegate.swift */; };
 		2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5A224FB24000794AE2 /* ViewController.swift */; };
 		2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5C224FB24000794AE2 /* Main.storyboard */; };
@@ -25,17 +26,18 @@
 		2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1222500B47003FD9FB /* LoginViewController.swift */; };
 		2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */; };
 		2EE55E1722503967003FD9FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1622503967003FD9FB /* TableViewCell.swift */; };
-		2EE55E1922503B83003FD9FB /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */; };
+		403529A22253F372004805BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 403529A12253F372004805BF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E12C90E22517251005FCC77 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		2E12C9102251E515005FCC77 /* DriverTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTabBarController.swift; sourceTree = "<group>"; };
 		2E12C91222528056005FCC77 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		2E12C914225280F0005FCC77 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		2E12C91622528248005FCC77 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		2E12C918225282A3005FCC77 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		2E12C91D2252B38E005FCC77 /* ShowAddVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAddVehicle.swift; sourceTree = "<group>"; };
+		2E12C91F2252B730005FCC77 /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
 		2EDA7B55224FB24000794AE2 /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDA7B58224FB24000794AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDA7B5A224FB24000794AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		2EE55E1222500B47003FD9FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 		2EE55E1622503967003FD9FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
+		403529A12253F372004805BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B48B396178F4AC33741D734A /* Pods_FindDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B975586099A5B95DECECD0EB /* Pods-FindDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.release.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.release.xcconfig"; sourceTree = "<group>"; };
 		C98F8F36603A02C16830B4E7 /* Pods-FindDriver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindDriver.debug.xcconfig"; path = "Target Support Files/Pods-FindDriver/Pods-FindDriver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,9 +72,35 @@
 			isa = PBXGroup;
 			children = (
 				2EDA7B67224FB24000794AE2 /* Info.plist */,
-				2E12C90B22511F0C005FCC77 /* GoogleService-Info.plist */,
+				403529A12253F372004805BF /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E12C91A2252B2C2005FCC77 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C91D2252B38E005FCC77 /* ShowAddVehicle.swift */,
+				2E12C91F2252B730005FCC77 /* AddEditTableViewController.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		2E12C91B2252B2CD005FCC77 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2E12C90E22517251005FCC77 /* RegistrationViewController.swift */,
+				2EE55E1222500B47003FD9FB /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2E12C91C2252B2DE005FCC77 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */,
+			);
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		2EDA7B4C224FB24000794AE2 = {
@@ -130,14 +158,13 @@
 			isa = PBXGroup;
 			children = (
 				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
-				2E12C90E22517251005FCC77 /* RegistrationViewController.swift */,
-				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
+				2E12C91C2252B2DE005FCC77 /* Payment */,
+				2E12C91B2252B2CD005FCC77 /* Login */,
+				2E12C91A2252B2C2005FCC77 /* Vehicle */,
 				2EE55E1622503967003FD9FB /* TableViewCell.swift */,
-				2EE55E14225027D3003FD9FB /* PaymentsViewController.swift */,
-				2E12C9102251E515005FCC77 /* DriverTabBarController.swift */,
-				2EE55E1222500B47003FD9FB /* LoginViewController.swift */,
 				2EE55E1022500301003FD9FB /* OwnerTabBarController.swift */,
-				2EE55E1822503B83003FD9FB /* AddEditTableViewController.swift */,
+				2E12C9102251E515005FCC77 /* DriverTabBarController.swift */,
+				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,7 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDA7B66224FB24000794AE2 /* LaunchScreen.storyboard in Resources */,
-				2E12C90C22511F0D005FCC77 /* GoogleService-Info.plist in Resources */,
+				403529A22253F372004805BF /* GoogleService-Info.plist in Resources */,
 				2EDA7B63224FB24000794AE2 /* Assets.xcassets in Resources */,
 				2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */,
 			);
@@ -292,9 +319,10 @@
 			files = (
 				2E12C91722528248005FCC77 /* Vehicle.swift in Sources */,
 				2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */,
+				2E12C9202252B730005FCC77 /* AddEditTableViewController.swift in Sources */,
 				2E12C919225282A3005FCC77 /* Payment.swift in Sources */,
 				2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */,
-				2EE55E1922503B83003FD9FB /* AddEditTableViewController.swift in Sources */,
+				2E12C91E2252B38E005FCC77 /* ShowAddVehicle.swift in Sources */,
 				2E12C915225280F0005FCC77 /* Driver.swift in Sources */,
 				2E12C90F22517251005FCC77 /* RegistrationViewController.swift in Sources */,
 				2EE55E1122500301003FD9FB /* OwnerTabBarController.swift in Sources */,
@@ -451,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UN2ZA4TX7;
+				DEVELOPMENT_TEAM = V5YP4NX42U;
 				INFOPLIST_FILE = FindDriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,7 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4UN2ZA4TX7;
+				DEVELOPMENT_TEAM = V5YP4NX42U;
 				INFOPLIST_FILE = FindDriver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,5 +1,5 @@
 //
-//  Owner.swift
+//  Driver.swift
 //  FindDriver
 //
 //  Created by Miad Azarmehr on 2019-04-01.
@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class Owner {
+class Driver {
     
     var id: String = ""
     var firstName = ""
@@ -19,6 +19,7 @@ class Owner {
     var phone = ""
     var city = ""
     var postalCode = ""
-    var ownerID = ""
-    
+    var availibility = false
+    var vehicleID = ""
+    var driverID = ""
 }
