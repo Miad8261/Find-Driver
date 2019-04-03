@@ -11,7 +11,7 @@ import Firebase
 
 class Payment {
     
-    var id: String = ""
+    var id = ""
     var paymentDate = ""
     var startDate = ""
     var endDate = ""

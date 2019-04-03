@@ -11,7 +11,7 @@ import Firebase
 
 class Driver {
     
-    var id: String = ""
+    var id = ""
     var firstName = ""
     var lastName = ""
     var email = ""

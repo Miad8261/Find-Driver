@@ -31,7 +31,7 @@ class AddEditTableViewController: UITableViewController {
         
         let toggleSwitch = availableToogleSwitch.isOn
         
-        let vehicleDB = Database.database().reference().child("Vehicles").childByAutoId()
+        let vehicleDB = Database.database().reference().child("vehicles").childByAutoId()
         
 
         
@@ -44,7 +44,8 @@ class AddEditTableViewController: UITableViewController {
                 print(error!)
             } else {
                 
-            print("Vehicle added successfuly \(Auth.auth().currentUser?.uid)")
+            print("Vehicle added successfuly")
+//                self.tableView.reloadData()
             }
         }
         

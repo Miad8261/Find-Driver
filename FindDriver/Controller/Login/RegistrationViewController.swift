@@ -42,11 +42,14 @@ class RegistrationViewController: UIViewController {
                 
                 print ("Create owner successfuly! \(self.newUserId)")
                 self.saveOwnerInformation()
+                
+                let ownerTabBarController  = self.storyboard?.instantiateViewController(withIdentifier: "ownerTabBarController") as! OwnerTabBarController
+                self.present(ownerTabBarController, animated: true, completion: nil)
+                
             }
         }
         //        self.navigationController?.popToRootController(animated: true)
-        let ownerTabBarController  = self.storyboard?.instantiateViewController(withIdentifier: "ownerTabBarController") as! OwnerTabBarController
-        self.present(ownerTabBarController, animated: true, completion: nil)
+        
     }
     
     
@@ -78,12 +81,12 @@ class RegistrationViewController: UIViewController {
             } else {
                 print("Driver ID created successfully!")
                 self.saveDriverInformation()
+                
+                let driverTabBarController  = self.storyboard?.instantiateViewController(withIdentifier: "driverTabBarController") as! DriverTabBarController
+                self.present(driverTabBarController, animated: true, completion: nil)
             }
         }
-
         //        self.navigationController?.popToRootController(animated: true)
-        let driverTabBarController  = self.storyboard?.instantiateViewController(withIdentifier: "driverTabBarController") as! DriverTabBarController
-        self.present(driverTabBarController, animated: true, completion: nil)
     }
     
     func saveDriverInformation(){

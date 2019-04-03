@@ -10,8 +10,8 @@ import Foundation
 import Firebase
 
 class Owner {
-    
-    var id: String = ""
+
+    var id = ""
     var firstName = ""
     var lastName = ""
     var email = ""
@@ -20,5 +20,8 @@ class Owner {
     var city = ""
     var postalCode = ""
     var ownerID = ""
-    
+
 }
+
+
+
