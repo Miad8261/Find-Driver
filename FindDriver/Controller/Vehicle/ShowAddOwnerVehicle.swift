@@ -66,7 +66,7 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
         let currentLoggedInUserID = Auth.auth().currentUser?.uid
         
         let ref = Database.database().reference(fromURL: "finddriver-8d2d6.firebaseio.com").child("vehicles")
-        let query = ref.queryOrdered(byChild: "ownerID").queryEqual(toValue: currentLoggedInUserID)
+        let query = ref.queryOrdered(byChild: "personID").queryEqual(toValue: currentLoggedInUserID)
         query.observe(.value, with: { (snapshot) in
             
             //            for childSnapshot in snapshot.children {
@@ -85,7 +85,7 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
                 let availability = dictionary?["availability"] as? Bool
                 let brand = dictionary?["brand"] as? String
                 let model = dictionary?["model"] as? String
-                let owwnerID = dictionary?["ownerID"] as? String
+                let owwnerID = dictionary?["personID"] as? String
                 let type = dictionary?["type"] as? String
                 let weeklyRent = dictionary?["weeklyRent"] as? String
                 let year = dictionary?["year"] as? String

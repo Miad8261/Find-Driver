@@ -19,7 +19,7 @@ class Driver {
     var phone = ""
     var city = ""
     var postalCode = ""
-    var availibility = false
+    var availability = false
     var vehicleID = ""
     var driverID = ""
 }

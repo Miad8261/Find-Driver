@@ -40,7 +40,7 @@ class RegistrationViewController: UIViewController {
                 print(error!)
             } else {
                 
-                print ("Create owner successfuly! \(self.newUserId)")
+                print ("Create owner successfuly! \(String(describing: self.newUserId))")
                 self.saveOwnerInformation()
                 
                 let ownerTabBarController  = self.storyboard?.instantiateViewController(withIdentifier: "ownerTabBarController") as! OwnerTabBarController
@@ -54,12 +54,9 @@ class RegistrationViewController: UIViewController {
     
     
     func saveOwnerInformation() {
-        
-        let ownerUsers = ref.child("owners").childByAutoId()
-        let messageDictionary = ["firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "owner", "ownerID": newUserId]
-        
-        //        print("OOwner saved successfuly! \(String(describing: Auth.auth().currentUser?.uid))")
-        
+        let ownerUsers = ref.child("profiles").childByAutoId()
+        let messageDictionary = ["firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "owner", "personID": newUserId]
+
         ownerUsers.setValue(messageDictionary) {
             (error, reference) in
             
@@ -74,7 +71,6 @@ class RegistrationViewController: UIViewController {
     
     // Sign Up as Driver
     @IBAction func driverButtonPressed(_ sender: UIButton) {
-        
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil {
                 print(error!)
@@ -90,16 +86,16 @@ class RegistrationViewController: UIViewController {
     }
     
     func saveDriverInformation(){
-        let driverUsers = Database.database().reference().child("drivers")
-        let messageDictionary = ["driverID": Auth.auth().currentUser?.uid, "firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "driver"]
+        let driverUsers = ref.child("profiles").childByAutoId()
+        let messageDictionary = ["personID": Auth.auth().currentUser?.uid, "firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "driver"]
         
-        driverUsers.childByAutoId().setValue(messageDictionary) {
+        driverUsers.setValue(messageDictionary) {
             (error, reference) in
             
             if error != nil {
                 print(error!)
             } else {
-                print("Driver saved successfuly!\(Auth.auth().currentUser?.uid)")
+                print("Driver saved successfuly!\(String(describing: Auth.auth().currentUser?.uid))")
             }
         }
     }

@@ -411,21 +411,12 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="56" id="Fm4-Im-6kr">
-                                                        <rect key="frame" x="0.0" y="28" width="375" height="56"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customMessageCell" rowHeight="108" id="BvZ-6p-kkr">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fm4-Im-6kr" id="H66-MA-3sP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55.5"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BvZ-6p-kkr" id="ERW-PR-APk">
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vr-d5-cT5">
-                                                                    <rect key="frame" x="15" y="7" width="345" height="41"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
