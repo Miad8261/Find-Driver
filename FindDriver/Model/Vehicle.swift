@@ -14,7 +14,7 @@ class Vehicle {
     var type = ""
     var year = ""
     var weeklyRent = ""
-    var availibility = true
+    var availability = true
     var ownerID = ""
     var driverID = ""
 }

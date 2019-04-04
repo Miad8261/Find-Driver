@@ -22,4 +22,5 @@ class Driver {
     var availability = false
     var vehicleID = ""
     var driverID = ""
+    var personID = ""
 }

@@ -55,7 +55,7 @@ class RegistrationViewController: UIViewController {
     
     func saveOwnerInformation() {
         let ownerUsers = ref.child("profiles").childByAutoId()
-        let messageDictionary = ["firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "owner", "personID": newUserId]
+        let messageDictionary = ["firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "owner", "ownerID": newUserId, "personID": newUserId]
 
         ownerUsers.setValue(messageDictionary) {
             (error, reference) in
@@ -87,7 +87,7 @@ class RegistrationViewController: UIViewController {
     
     func saveDriverInformation(){
         let driverUsers = ref.child("profiles").childByAutoId()
-        let messageDictionary = ["personID": Auth.auth().currentUser?.uid, "firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "driver"]
+        let messageDictionary = ["driverID": Auth.auth().currentUser?.uid, "firstName": self.firstNameTextfield.text!, "lastName": self.lastNameTextfield.text!, "email": self.emailTextfield.text!, "phone": self.phoneTextfield.text!, "city": self.cityTextfield.text!,"type": "driver", "personID": Auth.auth().currentUser?.uid]
         
         driverUsers.setValue(messageDictionary) {
             (error, reference) in

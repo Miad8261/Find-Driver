@@ -20,6 +20,7 @@ class Owner {
     var city = ""
     var postalCode = ""
     var ownerID = ""
+    var personID = ""
 
 }
 

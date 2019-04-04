@@ -9,7 +9,10 @@
 import UIKit
 import Firebase
 
-class DriverFindVehicleTableViewController: UITableViewController {
+class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    @IBOutlet var tableView: UITableView!
     
     
     var vehicleArray: [Vehicle] = [Vehicle]()
@@ -38,7 +41,7 @@ class DriverFindVehicleTableViewController: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
@@ -50,8 +53,8 @@ class DriverFindVehicleTableViewController: UITableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         let va = vehicleArray.count
         print ("vehiclecount -------> \(va)")
         return va
@@ -60,11 +63,15 @@ class DriverFindVehicleTableViewController: UITableViewController {
     
     func retrieveVehicles() {
         
-       // let currentLoggedInUserID = Auth.auth().currentUser?.uid
+        // let currentLoggedInUserID = Auth.auth().currentUser?.uid
         
         let ref = Database.database().reference(fromURL: "finddriver-8d2d6.firebaseio.com").child("vehicles")
-        let query = ref.queryOrdered(byChild: "availibility").queryEqual(toValue: "true")
+        let query = ref.queryOrdered(byChild: "availability").queryEqual(toValue: true)
         query.observe(.value, with: { (snapshot) in
+            
+            let vehiclesRetrived = snapshot.value!
+            print(vehiclesRetrived)
+            
             
             for snaps in snapshot.children.allObjects as! [DataSnapshot] {
                 
@@ -72,20 +79,18 @@ class DriverFindVehicleTableViewController: UITableViewController {
                 print(vehiclesRetrived)
                 let dictionary = snaps.value as? NSDictionary
                 
-//                let availability = dictionary?["availability"] as? Bool
                 let brand = dictionary?["brand"] as? String
                 let model = dictionary?["model"] as? String
-                let owwnerID = dictionary?["ownerID"] as? String
+                //let ownerID = dictionary?["ownerID"] as? String
                 let type = dictionary?["type"] as? String
                 let weeklyRent = dictionary?["weeklyRent"] as? String
                 let year = dictionary?["year"] as? String
                 
                 let theVehicles = Vehicle()
                 
-//                theVehicles.availibility = availability!
                 theVehicles.brand = brand!
                 theVehicles.model = model!
-                theVehicles.ownerID = owwnerID!
+                //theVehicles.ownerID = ownerID!
                 theVehicles.type = type!
                 theVehicles.weeklyRent = weeklyRent!
                 theVehicles.year = year!
@@ -94,7 +99,7 @@ class DriverFindVehicleTableViewController: UITableViewController {
                 
                 self.configureTableView()
                 self.tableView.reloadData()
-
+                
             }
         })
     }

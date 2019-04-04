@@ -45,7 +45,7 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
        
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
 
-        cell.vehicleDetailLabel.text = "\(vehicleArray[indexPath.row].type), \(vehicleArray[indexPath.row].brand), \(vehicleArray[indexPath.row].model), \(vehicleArray[indexPath.row].year), \(vehicleArray[indexPath.row].weeklyRent), \(vehicleArray[indexPath.row].availibility)"
+        cell.vehicleDetailLabel.text = "\(vehicleArray[indexPath.row].type), \(vehicleArray[indexPath.row].brand), \(vehicleArray[indexPath.row].model), \(vehicleArray[indexPath.row].year), \(vehicleArray[indexPath.row].weeklyRent), \(vehicleArray[indexPath.row].availability)"
         
         return cell
         
@@ -66,7 +66,7 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
         let currentLoggedInUserID = Auth.auth().currentUser?.uid
         
         let ref = Database.database().reference(fromURL: "finddriver-8d2d6.firebaseio.com").child("vehicles")
-        let query = ref.queryOrdered(byChild: "personID").queryEqual(toValue: currentLoggedInUserID)
+        let query = ref.queryOrdered(byChild: "ownerID").queryEqual(toValue: currentLoggedInUserID)
         query.observe(.value, with: { (snapshot) in
             
             //            for childSnapshot in snapshot.children {
@@ -85,17 +85,17 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
                 let availability = dictionary?["availability"] as? Bool
                 let brand = dictionary?["brand"] as? String
                 let model = dictionary?["model"] as? String
-                let owwnerID = dictionary?["personID"] as? String
+                let ownerID = dictionary?["ownerID"] as? String
                 let type = dictionary?["type"] as? String
                 let weeklyRent = dictionary?["weeklyRent"] as? String
                 let year = dictionary?["year"] as? String
                 
                 let theVehicles = Vehicle()
                 
-                theVehicles.availibility = availability!
+                theVehicles.availability = availability!
                 theVehicles.brand = brand!
                 theVehicles.model = model!
-                theVehicles.ownerID = owwnerID!
+                theVehicles.ownerID = ownerID!
                 theVehicles.type = type!
                 theVehicles.weeklyRent = weeklyRent!
                 theVehicles.year = year!
