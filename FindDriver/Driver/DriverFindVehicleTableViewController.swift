@@ -15,7 +15,7 @@ class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSou
     @IBOutlet var tableView: UITableView!
     
     
-    var vehicleArray: [Vehicle] = [Vehicle]()
+//    var vehicleArray: [Vehicle] = [Vehicle]()
     
     
     
@@ -46,7 +46,7 @@ class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSou
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
         
-        cell.vehicleDetailLabel.text = "\(vehicleArray[indexPath.row].type), \(vehicleArray[indexPath.row].brand), \(vehicleArray[indexPath.row].model), \(vehicleArray[indexPath.row].year), \(vehicleArray[indexPath.row].weeklyRent))"
+        cell.vehicleDetailLabel.text = "\(vehicleArray[indexPath.row].type) \(vehicleArray[indexPath.row].brand) \(vehicleArray[indexPath.row].model) \(vehicleArray[indexPath.row].year) $\(vehicleArray[indexPath.row].weeklyRent)"
         
         return cell
         
@@ -58,6 +58,32 @@ class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSou
         let va = vehicleArray.count
         print ("vehiclecount -------> \(va)")
         return va
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "sendVehicleRequestCell", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "sendVehicleRequestCell" {
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            let theVehicles = vehicleArray[indexPath.row]
+            
+            let navVC = segue.destination as! UINavigationController
+            let sendVehicleRequestCell = navVC.viewControllers.first as! VehicleRentSendRequestTVC
+            
+            sendVehicleRequestCell.vehicles = theVehicles
+            
+            //            let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+            //            sendVehicleRequestCell.myImage = cell.imageViewImage.image
+        }
+    }
+    
+    @IBAction func unwindToFindVehicleForRent(_ unwindSegue: UIStoryboardSegue) {
+       
     }
     
     
@@ -79,23 +105,27 @@ class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSou
                 print(vehiclesRetrived)
                 let dictionary = snaps.value as? NSDictionary
                 
+                let availability = dictionary?["availability"] as? Bool
                 let brand = dictionary?["brand"] as? String
                 let model = dictionary?["model"] as? String
-                //let ownerID = dictionary?["ownerID"] as? String
+                let ownerID = dictionary?["ownerID"] as? String
                 let type = dictionary?["type"] as? String
                 let weeklyRent = dictionary?["weeklyRent"] as? String
                 let year = dictionary?["year"] as? String
+                let request = dictionary?["request"] as? Bool
                 
                 let theVehicles = Vehicle()
                 
+                theVehicles.availability = availability!
                 theVehicles.brand = brand!
                 theVehicles.model = model!
-                //theVehicles.ownerID = ownerID!
+                theVehicles.ownerID = ownerID!
                 theVehicles.type = type!
                 theVehicles.weeklyRent = weeklyRent!
                 theVehicles.year = year!
+                theVehicles.request = request!
                 
-                self.vehicleArray.append(theVehicles)
+                vehicleArray.append(theVehicles)
                 
                 self.configureTableView()
                 self.tableView.reloadData()
@@ -103,4 +133,5 @@ class DriverFindVehicleTableViewController: UIViewController, UITableViewDataSou
             }
         })
     }
+    
 }

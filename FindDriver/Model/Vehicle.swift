@@ -6,6 +6,8 @@
 //  Copyright © 2019 Miad Azarmehr. All rights reserved.
 //
 
+var vehicleArray: [Vehicle] = [Vehicle]()
+
 class Vehicle {
 
     var id = ""
@@ -17,6 +19,7 @@ class Vehicle {
     var availability = true
     var ownerID = ""
     var driverID = ""
+    var request = false
 }
 
 

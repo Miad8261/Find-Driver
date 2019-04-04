@@ -15,7 +15,8 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var tableView: UITableView!
     
    // var ref: DatabaseReference!
-    var vehicleArray: [Vehicle] = [Vehicle]()
+//    var vehicleArray: [Vehicle] = [Vehicle]()
+    
     
     
     override func viewDidLoad() {
@@ -61,6 +62,31 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToAddVehicle", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAddVehicle" {
+            
+            let indexPath = tableView.indexPathForSelectedRow!
+            let theVehicles = vehicleArray[indexPath.row]
+            
+            let navVC = segue.destination as! UINavigationController
+            let sendVehicleRequestCell = navVC.viewControllers.first as! AddEditTableViewController
+            
+            sendVehicleRequestCell.vehicles = theVehicles
+            
+            //            let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+            //            sendVehicleRequestCell.myImage = cell.imageViewImage.image
+        }
+    }
+    
+    @IBAction func unwindToOwnerVehiclesList(_ unwindSegue: UIStoryboardSegue) {
+    }
+    
+    
     func retrieveVehicles() {
         
         let currentLoggedInUserID = Auth.auth().currentUser?.uid
@@ -100,7 +126,7 @@ class ShowAddOwnerVehicle: UIViewController, UITableViewDataSource, UITableViewD
                 theVehicles.weeklyRent = weeklyRent!
                 theVehicles.year = year!
                 
-                self.vehicleArray.append(theVehicles)
+                vehicleArray.append(theVehicles)
                 
                 self.configureTableView()
                 self.tableView.reloadData()

@@ -20,6 +20,7 @@ class AddEditTableViewController: UITableViewController {
     @IBOutlet weak var availableToogleSwitch: UISwitch!
     
 //    var veicleArray : [Vehicle] = [Vehicle]()
+    var vehicles: Vehicle?
     
     
     override func viewDidLoad() {
@@ -36,7 +37,7 @@ class AddEditTableViewController: UITableViewController {
 
         
         let vehicleDictionary = ["ownerID": Auth.auth().currentUser?.uid as Any, "type": self.typeTextfield.text!,
-                                 "brand": self.brandTextfield.text!, "model": self.modelTextfield.text!, "year": self.yearTextfield.text!, "weeklyRent": self.weeklyTextfield.text!, "availability": toggleSwitch]
+                                 "brand": self.brandTextfield.text!, "model": self.modelTextfield.text!, "year": self.yearTextfield.text!, "weeklyRent": self.weeklyTextfield.text!, "availability": toggleSwitch, "request": false]
         
         vehicleDB.setValue(vehicleDictionary) {
             (error, reference) in
