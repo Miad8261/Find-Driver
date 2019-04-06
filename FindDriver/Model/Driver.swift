@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 
+
 class Driver {
     
     var id = ""
@@ -23,4 +24,5 @@ class Driver {
     var vehicleID = ""
     var driverID = ""
     var personID = ""
+    var driverAutoGenerateKey = ""
 }

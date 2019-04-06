@@ -9,6 +9,10 @@
 import Foundation
 import Firebase
 
+//class ShowAddOwnerVehicle:
+var showVehicleToOwnerArray: [Vehicle] = [Vehicle]()
+
+
 class Owner {
 
     var id = ""
@@ -21,7 +25,7 @@ class Owner {
     var postalCode = ""
     var ownerID = ""
     var personID = ""
-    
+    var ownerAutoGenerateKey = ""
 
 }
 
