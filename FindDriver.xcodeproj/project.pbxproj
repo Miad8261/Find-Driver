@@ -19,8 +19,8 @@
 		2E1ECA1E22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ECA1D22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift */; };
 		2E1ECA2B2255481800FE9B0A /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ECA292255481800FE9B0A /* CustomMessageCell.swift */; };
 		2E1ECA2C2255481800FE9B0A /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ECA2A2255481800FE9B0A /* MessageCell.xib */; };
-		2E6CA19C22591B7F006888D1 /* ConnectionRequestOwnerReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA19B22591B7F006888D1 /* ConnectionRequestOwnerReceiveViewController.swift */; };
 		2E6CA19E22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */; };
+		2E6CA1A2225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */; };
 		2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B58224FB24000794AE2 /* AppDelegate.swift */; };
 		2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5A224FB24000794AE2 /* ViewController.swift */; };
 		2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5C224FB24000794AE2 /* Main.storyboard */; };
@@ -47,8 +47,8 @@
 		2E1ECA1D22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverFindAvailableVehicleTableViewController.swift; sourceTree = "<group>"; };
 		2E1ECA292255481800FE9B0A /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		2E1ECA2A2255481800FE9B0A /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		2E6CA19B22591B7F006888D1 /* ConnectionRequestOwnerReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRequestOwnerReceiveViewController.swift; sourceTree = "<group>"; };
 		2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsReceiveDetailsTableViewController.swift; sourceTree = "<group>"; };
+		2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveRequestsFromDriversTVC.swift; sourceTree = "<group>"; };
 		2EDA7B55224FB24000794AE2 /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDA7B58224FB24000794AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDA7B5A224FB24000794AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,8 +139,8 @@
 		2E6CA19A22591B6C006888D1 /* Owner */ = {
 			isa = PBXGroup;
 			children = (
-				2E6CA19B22591B7F006888D1 /* ConnectionRequestOwnerReceiveViewController.swift */,
 				2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */,
+				2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */,
 			);
 			path = Owner;
 			sourceTree = "<group>";
@@ -361,10 +361,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E12C91722528248005FCC77 /* Vehicle.swift in Sources */,
+				2E6CA1A2225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift in Sources */,
 				2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */,
 				2E1ECA2B2255481800FE9B0A /* CustomMessageCell.swift in Sources */,
 				2E12C9202252B730005FCC77 /* AddOwnerVehicleTVC.swift in Sources */,
-				2E6CA19C22591B7F006888D1 /* ConnectionRequestOwnerReceiveViewController.swift in Sources */,
 				2E12C919225282A3005FCC77 /* Payment.swift in Sources */,
 				2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */,
 				2E12C91E2252B38E005FCC77 /* ShowAddOwnerVehicle.swift in Sources */,

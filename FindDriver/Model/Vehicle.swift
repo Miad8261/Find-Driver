@@ -9,6 +9,7 @@
 //DriverFindVehicleTableViewController
 
 var vehicleArray: [Vehicle] = [Vehicle]()
+var requestedVehiclesArray: [Vehicle] = [Vehicle]()
 
 var vehicleIndex = 0
 
@@ -23,7 +24,6 @@ class Vehicle {
     var availability = true
     var ownerID = ""
     var driverID = ""
-    var request = false
     var currentOwnerID = ""
     var driverPhone = ""
     var ownerPhone = ""

@@ -9,10 +9,10 @@
 import Foundation
 import Firebase
 
+var driverInstance = Driver()
 
 class Driver {
     
-    var id = ""
     var firstName = ""
     var lastName = ""
     var email = ""
@@ -25,4 +25,5 @@ class Driver {
     var driverID = ""
     var personID = ""
     var driverAutoGenerateKey = ""
+    var requestSentStatus = false
 }
