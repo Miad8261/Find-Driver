@@ -30,10 +30,12 @@ class ReceiveRequestsFromDriversTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        
-//        cell.vehicleDetailLabel.text = "\(requestedVehiclesArray[indexPath.row].type) \(requestedVehiclesArray[indexPath.row].brand) \(requestedVehiclesArray[indexPath.row].model) \(requestedVehiclesArray[indexPath.row].year) \(requestedVehiclesArray[indexPath.row].weeklyRent) \(requestedVehiclesArray[indexPath.row].vehicleAutoGenerateKey)"
+        requestedIndex = indexPath.row
+        if vehicleArray[indexPath.row].vehicleRequested == true {
+        cell.vehicleDetailLabel.text = "\(vehicleArray[indexPath.row].type) \(vehicleArray[indexPath.row].brand) \(vehicleArray[indexPath.row].model) \(vehicleArray[indexPath.row].year) \(vehicleArray[indexPath.row].weeklyRent) \(vehicleArray[indexPath.row].vehicleAutoGenerateKey)"
+        }
 
-        cell.vehicleDetailLabel.text = "\(requestedVehiclesArray[indexPath.row].type) \(requestedVehiclesArray[indexPath.row].brand) \(requestedVehiclesArray[indexPath.row].model) \(requestedVehiclesArray[indexPath.row].year) \(requestedVehiclesArray[indexPath.row].weeklyRent)"
+//        cell.vehicleDetailLabel.text = "\(requestedVehiclesArray[indexPath.row].type) \(requestedVehiclesArray[indexPath.row].brand) \(requestedVehiclesArray[indexPath.row].model) \(requestedVehiclesArray[indexPath.row].year) \(requestedVehiclesArray[indexPath.row].weeklyRent)"
         
         return cell
     }
@@ -41,7 +43,7 @@ class ReceiveRequestsFromDriversTVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print ("vehiclecount============ \(vehicleArray.count)")
-        return requestedVehiclesArray.count
+        return vehicleArray.count
     }
     
     

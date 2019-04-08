@@ -493,7 +493,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i7-sM-ESa">
-                                                    <rect key="frame" x="275" y="382" width="74" height="30"/>
+                                                    <rect key="frame" x="231" y="382" width="74" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <state key="normal" title="Disconect">
@@ -520,7 +520,7 @@
                                 <segue destination="bvt-cd-vCJ" kind="unwind" unwindAction="unwindToFindVehicleForRent:" id="VMf-SF-wWI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Send connect request" style="done" id="Buy-CD-Dtj">
+                        <barButtonItem key="rightBarButtonItem" title="Send request" style="done" id="Buy-CD-Dtj">
                             <connections>
                                 <action selector="sendConnectionRequestToOwner:" destination="txy-x8-8QJ" id="9H9-vr-P4V"/>
                             </connections>
@@ -1411,6 +1411,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZaV-VC-6Zf" kind="relationship" relationship="rootViewController" id="fws-ce-b3J"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUj-sN-os3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1425,7 +1428,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k6R-9z-Py3">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="179" id="NpX-5i-1Dt">
@@ -1452,7 +1455,7 @@
                     <navigationItem key="navigationItem" id="a0w-We-prn">
                         <barButtonItem key="rightBarButtonItem" title="Make a payment" id="KBN-jd-EN8">
                             <connections>
-                                <segue destination="LeK-Yx-z2i" kind="push" id="hTJ-61-gLC"/>
+                                <segue destination="LeK-Yx-z2i" kind="push" identifier="goToMakePayment" id="hTJ-61-gLC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -9,6 +9,9 @@
 import Foundation
 import Firebase
 
+var ownersArray: [Owner] = [Owner]()
+var ownerIndex = 0
+
 class Owner {
 
     var firstName = ""
