@@ -19,8 +19,11 @@
 		2E1ECA1E22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ECA1D22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift */; };
 		2E1ECA2B2255481800FE9B0A /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1ECA292255481800FE9B0A /* CustomMessageCell.swift */; };
 		2E1ECA2C2255481800FE9B0A /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E1ECA2A2255481800FE9B0A /* MessageCell.xib */; };
-		2E6CA19E22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */; };
 		2E6CA1A2225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */; };
+		2ED5234C225A8D3200ABDB28 /* OwnerReceivedVehicleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5234B225A8D3200ABDB28 /* OwnerReceivedVehicleRequest.swift */; };
+		2ED5234E225AF00500ABDB28 /* ShowAllPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5234D225AF00500ABDB28 /* ShowAllPayments.swift */; };
+		2ED52350225AF22800ABDB28 /* PaymentDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5234F225AF22800ABDB28 /* PaymentDetailsTVC.swift */; };
+		2ED52352225AF28F00ABDB28 /* MakePaymentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED52351225AF28F00ABDB28 /* MakePaymentTVC.swift */; };
 		2EDA7B59224FB24000794AE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B58224FB24000794AE2 /* AppDelegate.swift */; };
 		2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5A224FB24000794AE2 /* ViewController.swift */; };
 		2EDA7B5E224FB24000794AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDA7B5C224FB24000794AE2 /* Main.storyboard */; };
@@ -47,8 +50,11 @@
 		2E1ECA1D22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverFindAvailableVehicleTableViewController.swift; sourceTree = "<group>"; };
 		2E1ECA292255481800FE9B0A /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		2E1ECA2A2255481800FE9B0A /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsReceiveDetailsTableViewController.swift; sourceTree = "<group>"; };
 		2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveRequestsFromDriversTVC.swift; sourceTree = "<group>"; };
+		2ED5234B225A8D3200ABDB28 /* OwnerReceivedVehicleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerReceivedVehicleRequest.swift; sourceTree = "<group>"; };
+		2ED5234D225AF00500ABDB28 /* ShowAllPayments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllPayments.swift; sourceTree = "<group>"; };
+		2ED5234F225AF22800ABDB28 /* PaymentDetailsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsTVC.swift; sourceTree = "<group>"; };
+		2ED52351225AF28F00ABDB28 /* MakePaymentTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePaymentTVC.swift; sourceTree = "<group>"; };
 		2EDA7B55224FB24000794AE2 /* FindDriver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindDriver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDA7B58224FB24000794AE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EDA7B5A224FB24000794AE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +129,9 @@
 			children = (
 				2E1ECA1D22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift */,
 				403529A32257B7FC004805BF /* DriverSendVehicleRentSendRequestTVC.swift */,
+				2ED5234D225AF00500ABDB28 /* ShowAllPayments.swift */,
+				2ED5234F225AF22800ABDB28 /* PaymentDetailsTVC.swift */,
+				2ED52351225AF28F00ABDB28 /* MakePaymentTVC.swift */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -139,8 +148,8 @@
 		2E6CA19A22591B6C006888D1 /* Owner */ = {
 			isa = PBXGroup;
 			children = (
-				2E6CA19D22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift */,
 				2E6CA1A1225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift */,
+				2ED5234B225A8D3200ABDB28 /* OwnerReceivedVehicleRequest.swift */,
 			);
 			path = Owner;
 			sourceTree = "<group>";
@@ -200,13 +209,13 @@
 		2EDA7B6F224FB2B500794AE2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
+				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
 				2E6CA19A22591B6C006888D1 /* Owner */,
 				2E1ECA1C22545ABF00FE9B0A /* Driver */,
-				2EDA7B58224FB24000794AE2 /* AppDelegate.swift */,
 				2E12C91C2252B2DE005FCC77 /* Payment */,
 				2E12C91B2252B2CD005FCC77 /* Login */,
 				2E12C91A2252B2C2005FCC77 /* Vehicle */,
-				2EDA7B5A224FB24000794AE2 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,19 +370,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E12C91722528248005FCC77 /* Vehicle.swift in Sources */,
+				2ED5234C225A8D3200ABDB28 /* OwnerReceivedVehicleRequest.swift in Sources */,
 				2E6CA1A2225939C0006888D1 /* ReceiveRequestsFromDriversTVC.swift in Sources */,
 				2EDA7B5B224FB24000794AE2 /* ViewController.swift in Sources */,
+				2ED52352225AF28F00ABDB28 /* MakePaymentTVC.swift in Sources */,
 				2E1ECA2B2255481800FE9B0A /* CustomMessageCell.swift in Sources */,
 				2E12C9202252B730005FCC77 /* AddOwnerVehicleTVC.swift in Sources */,
 				2E12C919225282A3005FCC77 /* Payment.swift in Sources */,
+				2ED52350225AF22800ABDB28 /* PaymentDetailsTVC.swift in Sources */,
 				2EDA7B61224FB24000794AE2 /* FindDriver.xcdatamodeld in Sources */,
 				2E12C91E2252B38E005FCC77 /* ShowAddOwnerVehicle.swift in Sources */,
 				2E12C915225280F0005FCC77 /* Driver.swift in Sources */,
 				403529A42257B7FC004805BF /* DriverSendVehicleRentSendRequestTVC.swift in Sources */,
-				2E6CA19E22591BA8006888D1 /* RequestsReceiveDetailsTableViewController.swift in Sources */,
 				2E12C90F22517251005FCC77 /* RegistrationViewController.swift in Sources */,
 				2E1ECA1E22545B0C00FE9B0A /* DriverFindAvailableVehicleTableViewController.swift in Sources */,
 				2E12C9112251E515005FCC77 /* DriverTabBarController.swift in Sources */,
+				2ED5234E225AF00500ABDB28 /* ShowAllPayments.swift in Sources */,
 				2EE55E15225027D3003FD9FB /* PaymentsViewController.swift in Sources */,
 				2EE55E1322500B47003FD9FB /* LoginViewController.swift in Sources */,
 				403529A72257E2EC004805BF /* OwnerTabBarController.swift in Sources */,

@@ -11,7 +11,6 @@ import Firebase
 
 class Owner {
 
-    var id = ""
     var firstName = ""
     var lastName = ""
     var email = ""

@@ -11,7 +11,6 @@ import Firebase
 
 class Payment {
     
-    var id = ""
     var paymentDate = ""
     var startDate = ""
     var endDate = ""
@@ -23,5 +22,7 @@ class Payment {
     var ownerID = ""
     var driverID = ""
     var vehicleID = ""
+    var driverPhone = ""
+    var driverName = ""
     
 }

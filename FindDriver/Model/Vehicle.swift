@@ -15,7 +15,6 @@ var vehicleIndex = 0
 
 class Vehicle {
 
-    var id = ""
     var model = ""
     var brand = ""
     var type = ""
@@ -24,9 +23,11 @@ class Vehicle {
     var availability = true
     var ownerID = ""
     var driverID = ""
+    var driverName = ""
     var currentOwnerID = ""
     var driverPhone = ""
     var ownerPhone = ""
-    var vehicleRequestStatus = false
+    var vehicleRequested = false
+    var requestAccepted = false
     var vehicleAutoGenerateKey = ""
 }
