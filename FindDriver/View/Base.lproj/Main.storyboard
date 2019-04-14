@@ -177,6 +177,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextfield" destination="kvI-Td-PJ5" id="jZi-R8-Zel"/>
+                        <outlet property="loginButton" destination="CuQ-Zx-gfi" id="Z5J-Jv-dIk"/>
                         <outlet property="passwordTextfield" destination="7JA-Il-Bgm" id="sk3-ze-8UD"/>
                     </connections>
                 </viewController>
@@ -1021,6 +1022,11 @@
                         <viewLayoutGuide key="safeArea" id="8mD-h5-Kbl"/>
                     </view>
                     <navigationItem key="navigationItem" title="Vehicles" id="6dU-gP-5b3">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="JlZ-fp-H6U">
+                            <connections>
+                                <action selector="logOutButton:" destination="rFF-3c-jHB" id="ofx-aj-viU"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add a vehicle" id="TRV-aq-Qlp">
                             <color key="tintColor" red="0.32008808851242065" green="0.56259244680404663" blue="0.97171884775161743" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -1465,6 +1471,11 @@
                         <viewLayoutGuide key="safeArea" id="cMS-ha-svn"/>
                     </view>
                     <navigationItem key="navigationItem" id="a0w-We-prn">
+                        <barButtonItem key="leftBarButtonItem" title="Log out" id="DKI-L1-sT8">
+                            <connections>
+                                <action selector="logOutButton:" destination="ZaV-VC-6Zf" id="Tsc-cl-kMR"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Make a payment" id="KBN-jd-EN8">
                             <connections>
                                 <segue destination="LeK-Yx-z2i" kind="push" identifier="goToMakePayment" id="hTJ-61-gLC"/>
@@ -1531,7 +1542,7 @@
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Amount paid: " borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BI8-Yd-lpi">
-                                                                    <rect key="frame" x="30" y="140" width="140" height="29"/>
+                                                                    <rect key="frame" x="30" y="141" width="140" height="30"/>
                                                                     <nil key="textColor"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                     <textInputTraits key="textInputTraits"/>
@@ -1547,7 +1558,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VET-Av-hHw">
-                                                                    <rect key="frame" x="175" y="145.5" width="57" height="18"/>
+                                                                    <rect key="frame" x="175" y="145.5" width="57" height="21"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="57" id="QN9-WC-KaV"/>
                                                                         <constraint firstAttribute="height" constant="21" id="wSC-dz-fq3"/>
@@ -1557,13 +1568,13 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqL-QR-nma">
-                                                                    <rect key="frame" x="175" y="93" width="129" height="21"/>
+                                                                    <rect key="frame" x="175" y="93" width="129" height="20.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="End date:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSh-Mu-KQQ">
-                                                                    <rect key="frame" x="30" y="85" width="95" height="29"/>
+                                                                    <rect key="frame" x="30" y="84.5" width="95" height="30"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="30" id="Pbc-zf-JJC"/>
                                                                     </constraints>
