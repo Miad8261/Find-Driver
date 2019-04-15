@@ -49,7 +49,7 @@ class OwnerCanSeePayments: UIViewController, UITableViewDataSource, UITableViewD
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print ("vehiclecount -------> \(vehicleArray.count)")
+        print ("vehiclecount paymentArray -------> \(paymentArray.count)")
         return paymentArray.count
     }
     

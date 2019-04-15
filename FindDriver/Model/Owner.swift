@@ -11,6 +11,7 @@ import Firebase
 
 var ownersArray: [Owner] = [Owner]()
 var ownerIndex = 0
+var currentLoggedInOwner = ""
 
 class Owner {
 
